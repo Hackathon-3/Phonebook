@@ -1,0 +1,51 @@
+2022-04-29 10:49:23.705  INFO 24536 --- [main] c.e.contact.ContactApplicationTests      : Starting ContactApplicationTests using Java 17.0.1 on XPXAAD-PF2ZY4H2 with PID 24536 (started by BijayaWagle in C:\Users\BijayaWagle\git\Phonebook\contact)
+2022-04-29 10:49:23.707  INFO 24536 --- [main] c.e.contact.ContactApplicationTests      : No active profile set, falling back to 1 default profile: "default"
+2022-04-29 10:49:24.611  INFO 24536 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-04-29 10:49:24.705  INFO 24536 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 81 ms. Found 2 JPA repository interfaces.
+2022-04-29 10:49:25.567  INFO 24536 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-04-29 10:49:25.674  INFO 24536 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.8.Final
+2022-04-29 10:49:25.929  INFO 24536 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-04-29 10:49:26.187  INFO 24536 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-04-29 10:49:26.194  WARN 24536 --- [main] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2022-04-29 10:49:26.641  INFO 24536 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-04-29 10:49:26.688  INFO 24536 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2022-04-29 10:49:27.716  INFO 24536 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-04-29 10:49:27.724  INFO 24536 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-04-29 10:49:28.710  WARN 24536 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-04-29 10:49:29.801  INFO 24536 --- [main] c.e.contact.ContactApplicationTests      : Started ContactApplicationTests in 6.563 seconds (JVM running for 7.864)
+2022-04-29 10:49:30.111  INFO 24536 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-04-29 10:49:30.115  INFO 24536 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-04-29 10:49:30.133  INFO 24536 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-04-29 10:51:04.045  INFO 10544 --- [main] com.example.contact.ContactApplication   : Starting ContactApplication using Java 17.0.1 on XPXAAD-PF2ZY4H2 with PID 10544 (C:\Users\BijayaWagle\git\Phonebook\contact\target\classes started by BijayaWagle in C:\Users\BijayaWagle\git\Phonebook\contact)
+2022-04-29 10:51:04.048  INFO 10544 --- [main] com.example.contact.ContactApplication   : No active profile set, falling back to 1 default profile: "default"
+2022-04-29 10:51:04.906  INFO 10544 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-04-29 10:51:04.997  INFO 10544 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 76 ms. Found 2 JPA repository interfaces.
+2022-04-29 10:51:05.927  INFO 10544 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-04-29 10:51:05.938  INFO 10544 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-04-29 10:51:05.939  INFO 10544 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.62]
+2022-04-29 10:51:06.107  INFO 10544 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-04-29 10:51:06.108  INFO 10544 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1992 ms
+2022-04-29 10:51:06.445  INFO 10544 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-04-29 10:51:06.526  INFO 10544 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.8.Final
+2022-04-29 10:51:06.780  INFO 10544 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-04-29 10:51:06.936  INFO 10544 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-04-29 10:51:06.944  WARN 10544 --- [main] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2022-04-29 10:51:07.353  INFO 10544 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-04-29 10:51:07.388  INFO 10544 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2022-04-29 10:51:08.364  INFO 10544 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-04-29 10:51:08.373  INFO 10544 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-04-29 10:51:08.919  WARN 10544 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-04-29 10:51:09.719  INFO 10544 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-04-29 10:51:09.735  INFO 10544 --- [main] com.example.contact.ContactApplication   : Started ContactApplication in 6.255 seconds (JVM running for 6.868)
+2022-04-29 10:55:41.041  INFO 10544 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-04-29 10:55:41.042  INFO 10544 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-04-29 10:55:41.043  INFO 10544 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-04-29 11:08:48.325  WARN 10544 --- [http-nio-8080-exec-2] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: No content to map due to end-of-input; nested exception is com.fasterxml.jackson.databind.exc.MismatchedInputException: No content to map due to end-of-input<EOL> at [Source: (org.springframework.util.StreamUtils$NonClosingInputStream); line: 1, column: 0]]
+2022-04-29 11:09:46.199  WARN 10544 --- [http-nio-8080-exec-3] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: No content to map due to end-of-input; nested exception is com.fasterxml.jackson.databind.exc.MismatchedInputException: No content to map due to end-of-input<EOL> at [Source: (org.springframework.util.StreamUtils$NonClosingInputStream); line: 1, column: 0]]
+2022-04-29 11:11:19.585  WARN 10544 --- [http-nio-8080-exec-6] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]
+2022-04-29 11:15:32.068  WARN 10544 --- [http-nio-8080-exec-6] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'DELETE' not supported]
+2022-04-29 11:15:45.303  WARN 10544 --- [http-nio-8080-exec-7] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'DELETE' not supported]
+2022-04-29 11:16:08.382  WARN 10544 --- [http-nio-8080-exec-9] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'DELETE' not supported]
+2022-04-29 11:16:27.457  WARN 10544 --- [http-nio-8080-exec-10] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot deserialize value of type `long` from String "sushil": not a valid `long` value; nested exception is com.fasterxml.jackson.databind.exc.InvalidFormatException: Cannot deserialize value of type `long` from String "sushil": not a valid `long` value<EOL> at [Source: (org.springframework.util.StreamUtils$NonClosingInputStream); line: 2, column: 6] (through reference chain: com.example.contact.model.Person["id"])]
+2022-04-29 11:19:43.716  WARN 10544 --- [http-nio-8080-exec-1] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: No content to map due to end-of-input; nested exception is com.fasterxml.jackson.databind.exc.MismatchedInputException: No content to map due to end-of-input<EOL> at [Source: (org.springframework.util.StreamUtils$NonClosingInputStream); line: 1, column: 0]]
+2022-04-29 11:24:22.382  WARN 10544 --- [http-nio-8080-exec-8] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'PATCH' not supported]

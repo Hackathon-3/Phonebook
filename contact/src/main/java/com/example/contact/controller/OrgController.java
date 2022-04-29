@@ -1,6 +1,8 @@
 package com.example.contact.controller;
 
 import java.util.List;
+import java.util.Optional;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -21,8 +23,8 @@ public class OrgController {
 	@Autowired
 	ContactOrganizationService orgService;
 
-	@GetMapping(value = "/org/info/{id}")
-	public List<Organization> info(@PathVariable(value = "id") Long id) {
+	@GetMapping("/org/info/{id}")
+	public Optional<Organization> info(@PathVariable(value = "id") Long id) {
 		return orgService.info(id);
 	}
 

@@ -1,6 +1,8 @@
 package com.example.contact.service;
 
 import java.util.List;
+import java.util.Optional;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import com.example.contact.model.Organization;
@@ -16,8 +18,8 @@ public class ContactOrganizationService {
 		return orgRepository.save(org);
 	}
 
-	public List<Organization> info(Long organizationId) {
-		return orgRepository.findAll();
+	public Optional<Organization> info(Long id) {
+		return orgRepository.findById(id);
 	}
 
 	public void delete(Long id) {

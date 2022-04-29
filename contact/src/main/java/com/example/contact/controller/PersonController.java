@@ -1,6 +1,8 @@
 package com.example.contact.controller;
 
 import java.util.List;
+import java.util.Optional;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -20,14 +22,15 @@ public class PersonController {
 	@Autowired
 	ContactPersonService perService;
 
+	//error output when using different ids and gives same result 
 	@GetMapping(value = "/person/info/{id}")
-	public List<Person> info(@PathVariable(value = "id") Long id) {
+	public Optional<Person> info(@PathVariable(value = "id") Long id) {
 		return perService.info(id);
 	}
-
+//doen't give output
 	@GetMapping(value = "/person/list")
-	public List<Person> list(@RequestBody Person per) {
-		return perService.list(per);
+	public List<Person> list() {
+		return perService.list();
 	}
 
 	@PostMapping("/person/add")
