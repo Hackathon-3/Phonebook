@@ -26,10 +26,8 @@ public class ContactOrganizationService {
 		orgRepository.deleteById(id);
 	}
 
-	public List<Organization> list(Organization org) {
-		org.getId();
-		org.getName();
-		return orgRepository.findAll();
+	public List<Organization> list() {
+		return orgRepository.getList();
 	}
 
 	public Organization update(Long Id, Organization orgDetails) {

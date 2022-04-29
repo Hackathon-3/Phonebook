@@ -35,16 +35,17 @@ public class Person {
 
 	public Person() {
 		super();
+		this.createdAt = LocalDateTime.now();
 	
 	}
 	
-	public Person(Long id, String name, String phoneNumber, String email, LocalDateTime createdAt) {
+	public Person(Long id, String name, String phoneNumber, String email) {
 		super();
 		this.id = id;
 		this.name = name;
 		this.phoneNumber = phoneNumber;
 		this.email = email;
-		this.createdAt = createdAt;
+		
 	}
 
 	public Long getId() {

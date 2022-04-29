@@ -26,10 +26,9 @@ public class ContactPersonService {
 		perRepository.deleteById(id);
 	}
 
-	public List<Person> list( Person per) {
-		per.getId();
-		per.getName();
-		return perRepository.findAll();
+	public List<Person> list() {
+		return perRepository.getList();
+		
 	}
 
 	public Person update(Long id, Person perDetails) {
