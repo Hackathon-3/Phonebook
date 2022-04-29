@@ -30,7 +30,7 @@ public class OrgController {
 
 	@GetMapping(value = "/org/list")
 	public List<Organization> list(@RequestBody Organization org) {
-		return orgService.list(org);
+		return orgService.list();
 	}
 
 	@PostMapping("/org/add")
@@ -52,5 +52,8 @@ public class OrgController {
 	public void delete(@PathVariable(value = "id") Long id) {
 		orgService.delete(id);
 	}
-
+	@GetMapping("/org/count")
+	public Long count() {
+	return orgService.count();	
+	}
 }

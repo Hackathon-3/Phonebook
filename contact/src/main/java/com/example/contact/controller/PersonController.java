@@ -29,7 +29,7 @@ public class PersonController {
 	}
 //doen't give output
 	@GetMapping(value = "/person/list")
-	public List<Person> list() {
+	public List<Person> getList() {
 		return perService.list();
 	}
 
@@ -51,6 +51,10 @@ public class PersonController {
 	@DeleteMapping("/person/delete/{id}")
 	public void delete(@PathVariable(value = "id") Long id) {
 		perService.delete(id);
+	}
+	@GetMapping("/person/count")
+	public Long count() {
+	return perService.count();	
 	}
 
 }

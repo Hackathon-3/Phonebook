@@ -1,5 +1,6 @@
 package com.example.contact.model;
 
+
 import java.time.LocalDateTime;
 
 import javax.persistence.Column;
@@ -36,16 +37,16 @@ public class Organization {
 
 	public Organization() {
 		super();
+		this.createdAt = LocalDateTime.now();
 	}
 
-	public Organization(Long id, String name, String phoneNumber, String email, LocalDateTime createdAt,
+	public Organization(Long id, String name, String phoneNumber, String email, 
 			String website) {
 		super();
 		this.id = id;
 		this.name = name;
 		this.phoneNumber = phoneNumber;
 		this.email = email;
-		this.createdAt = createdAt;
 		this.website = website;
 	}
 
