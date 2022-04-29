@@ -1,6 +1,8 @@
 package com.example.contact.service;
 
 import java.util.List;
+import java.util.Optional;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import com.example.contact.model.Person;
@@ -16,15 +18,15 @@ public class ContactPersonService {
 		return perRepository.save(per);
 	}
 
-	public List<Person> info(Long id) {
-		return perRepository.findAll();
+	public Optional<Person> info(Long id) {
+		return perRepository.findById(id);
 	}
 
 	public void delete(Long id) {
 		perRepository.deleteById(id);
 	}
 
-	public List<Person> list(Person per) {
+	public List<Person> list( Person per) {
 		per.getId();
 		per.getName();
 		return perRepository.findAll();
