@@ -2,9 +2,12 @@ package com.example.contact.service;
 
 import java.util.List;
 import java.util.Optional;
+import java.util.stream.Collectors;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+
+import com.example.contact.model.Organization;
 import com.example.contact.model.Person;
 import com.example.contact.repository.ContactPersonRepository;
 
@@ -27,7 +30,7 @@ public class ContactPersonService {
 	}
 
 	public List<Person> list() {
-		return perRepository.getList();
+		return perRepository.findAll();
 		
 	}
 
@@ -48,6 +51,14 @@ public class ContactPersonService {
 		Person per = perRepository.findById(id).get();
 		per.setName(newName);
 		return perRepository.save(per);
+	}
+	public List<Person> searchByName(String searchName) {
+		List<Person> pers = perRepository.findAll();
+		if(pers != null) {
+			return pers.stream().filter(per -> per.getName().toLowerCase().contains(searchName.toLowerCase())).toList();	
+		}
+		else
+			return null;
 	}
 
 	// check phone number validation
