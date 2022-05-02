@@ -2,7 +2,6 @@ package com.example.contact.model;
 import java.sql.Date;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
-
 import javax.persistence.AttributeConverter;
 import javax.persistence.Column;
 import javax.persistence.Converter;
@@ -13,7 +12,6 @@ import javax.persistence.Id;
 import javax.persistence.Inheritance;
 import javax.persistence.InheritanceType;
 
- 
 @Converter(autoApply = true)
 @Entity
 @Inheritance(strategy = InheritanceType.TABLE_PER_CLASS)
@@ -22,22 +20,21 @@ public abstract class Contact implements AttributeConverter<LocalDate, Date> {
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	@Column(name = "id")
-	 protected Long id;
-	
+	protected Long id;
+
 	@Column(name = "name")
 	private String name;
-  
+
 	@Column(name = "phoneNumber")
 	private String phoneNumber;
-	
+
 	@Column(name = "email")
 	private String email;
 
 	@Column(name = "created_at")
-    private LocalDateTime createdAt;
+	private LocalDateTime createdAt;
 
-		
-    public Contact() {
+	public Contact() {
 		super();
 		this.createdAt = LocalDateTime.now();
 	}
@@ -92,19 +89,19 @@ public abstract class Contact implements AttributeConverter<LocalDate, Date> {
 	}
 
 	@Override
-    public Date convertToDatabaseColumn(LocalDate locDate) {
-        return locDate == null ? null : Date.valueOf(locDate);
-    }
- 
-    @Override
-    public LocalDate convertToEntityAttribute(Date sqlDate) {
-        return sqlDate == null ? null : sqlDate.toLocalDate();
-    }
+	public Date convertToDatabaseColumn(LocalDate locDate) {
+		return locDate == null ? null : Date.valueOf(locDate);
+	}
+
+	@Override
+	public LocalDate convertToEntityAttribute(Date sqlDate) {
+		return sqlDate == null ? null : sqlDate.toLocalDate();
+	}
 
 	@Override
 	public String toString() {
 		return "Contact [id=" + id + ", name=" + name + ", phoneNumber=" + phoneNumber + ", email=" + email
 				+ ", createdAt=" + createdAt + "]";
 	}
-    
+
 }
