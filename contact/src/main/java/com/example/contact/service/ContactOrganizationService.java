@@ -2,6 +2,7 @@ package com.example.contact.service;
 
 import java.util.List;
 import java.util.Optional;
+import java.util.stream.Collectors;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -27,7 +28,7 @@ public class ContactOrganizationService {
 	}
 
 	public List<Organization> list() {
-		return orgRepository.getList();
+		return orgRepository.findAll();
 	}
 
 	public Organization update(Long Id, Organization orgDetails) {
@@ -47,5 +48,13 @@ public class ContactOrganizationService {
 		Organization org = orgRepository.findById(id).get();
 		org.setName(newName);
 		return orgRepository.save(org);
+	}
+	public List<Organization> searchByName(String searchName) {
+		List<Organization> orgs = orgRepository.findAll();
+		if(orgs != null) {
+			return orgs.stream().filter(org -> org.getName().toLowerCase().contains(searchName.toLowerCase())).toList();	
+		}
+		else
+			return null;
 	}
 }

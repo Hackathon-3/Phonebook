@@ -29,7 +29,7 @@ public class OrgController {
 	}
 
 	@GetMapping(value = "/org/list")
-	public List<Organization> list(@RequestBody Organization org) {
+	public List<Organization> list() {
 		return orgService.list();
 	}
 
@@ -55,5 +55,9 @@ public class OrgController {
 	@GetMapping("/org/count")
 	public Long count() {
 	return orgService.count();	
+	}
+	@GetMapping("/org/search/{searchname}")
+	public List<Organization> search(@PathVariable(value = "searchname") String searchName) {
+		return orgService.searchByName(searchName);
 	}
 }
