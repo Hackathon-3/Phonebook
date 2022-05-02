@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.example.contact.model.Organization;
+//import com.example.contact.model.Organization;
 import com.example.contact.model.Person;
 import com.example.contact.service.ContactPersonService;
 
@@ -24,12 +24,12 @@ public class PersonController {
 	@Autowired
 	ContactPersonService perService;
 
-	//error output when using different ids and gives same result 
+	
 	@GetMapping(value = "/person/info/{id}")
 	public Optional<Person> info(@PathVariable(value = "id") Long id) {
 		return perService.info(id);
 	}
-//doen't give output
+
 	@GetMapping(value = "/person/list")
 	public List<Person> getList() {
 		return perService.list();
