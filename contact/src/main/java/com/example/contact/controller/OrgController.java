@@ -17,6 +17,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.example.contact.model.Organization;
 import com.example.contact.service.ContactOrganizationService;
 
+
 @RestController
 @RequestMapping("/api")
 public class OrgController {

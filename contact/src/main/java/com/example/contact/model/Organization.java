@@ -22,6 +22,7 @@ public class Organization extends Contact{
 	}
 
 	
+	
 	public Organization() {
 		super();
 	
