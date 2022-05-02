@@ -14,9 +14,9 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.example.contact.model.Organization;
 import com.example.contact.model.Person;
 import com.example.contact.service.ContactPersonService;
+
 
 @RestController
 @RequestMapping("/api")
@@ -24,12 +24,11 @@ public class PersonController {
 	@Autowired
 	ContactPersonService perService;
 
-	//error output when using different ids and gives same result 
 	@GetMapping(value = "/person/info/{id}")
 	public Optional<Person> info(@PathVariable(value = "id") Long id) {
 		return perService.info(id);
 	}
-//doen't give output
+
 	@GetMapping(value = "/person/list")
 	public List<Person> getList() {
 		return perService.list();
@@ -54,10 +53,12 @@ public class PersonController {
 	public void delete(@PathVariable(value = "id") Long id) {
 		perService.delete(id);
 	}
+
 	@GetMapping("/person/count")
 	public Long count() {
-	return perService.count();	
+		return perService.count();
 	}
+
 	@GetMapping("/person/search/{searchName}")
 	public List<Person> info(@PathVariable(value = "searchName") String searchName) {
 		return perService.searchByName(searchName);
